@@ -13,15 +13,15 @@ To run this locally check which version of ruby you have with the following comm
 
     ruby -v
 
-Anything after 1.9.3 should probably work fine.  Next, check that you have an up to date version of rails (this was developed with 3.2.13) with:
+Anything after 1.9.3 should probably work fine.  If necessary, update/install ruby.  Next, check that you have an up to date version of rails (this was developed with 3.2.13) with:
 
     rails -v
 
-Finally, simply clone or download the repo, cd into the root directory and run:
+Again, update/install rails if required.  Finally, simply clone or download the repo, cd into the root directory and run:
 
     rails server
 
-The app should now be running on localhost:3000.
+By default, the app should now be running on localhost:3000.
 
 ---------
 
