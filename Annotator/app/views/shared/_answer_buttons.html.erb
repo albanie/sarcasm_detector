@@ -1,0 +1,28 @@
+<%= form_for(@annotation) do |f| %>
+
+  <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+
+     <br>
+
+     <div class="btn-toolbar" data-toggle="buttons-radio">
+
+       <button value="positive" name="annotation[value]" type="submit" class="btn btn-success" data-disable-with="submitting...">
+         positive
+       </button>
+
+       <button value="sarcastic" name="annotation[value]" type="submit" class="btn btn-primary"data-disable-with="submitting...">  sarcastic
+       </button>
+
+      <button value="negative" name="annotation[value]" type="submit" class="btn btn-danger" data-disable-with="submitting...">
+         negative
+       </button>
+
+       <button value="unclear" name="annotation[value]" type="submit" class="btn btn-warning" data-disable-with="submitting...">
+         gibberish
+       </button>
+
+      <div id="divider" class="divider" /></div>
+    <%= hidden_field(:annotation, :tweetId) %>
+  </div>
+<% end %>

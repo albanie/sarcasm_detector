@@ -1,0 +1,35 @@
+<% provide(:title, @user.name ) %> 
+<div class="row">
+  <aside class="span5">
+    <section>
+      <%= link_to image_tag(@rating[1]) %>
+    </section>
+    <p>Your rating: <%= @rating[0] %></p>
+  </aside>
+  <aside class="span5">
+  <br>
+        <h3>
+      <%= gravatar_for @user %>
+      <%= @user.name %> 
+      </h3>
+      <br>
+        <p>Tweets Annotated:
+          <%= @count %>
+      </p>
+      <br>
+      <br>
+      <br>
+      <%= link_to "Begin annotating", root_path, class: "btn btn-large btn-success" %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  If at any time you wish to remove your data from the study, please click the link below to notify me:
+  <br>
+  <%= link_to "Remove my data", "mailto:albanies@tcd.ie" , class: "btn btn-danger" %>
+</aside>
+  <span>
+</div>

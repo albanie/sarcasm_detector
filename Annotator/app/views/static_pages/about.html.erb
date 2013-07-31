@@ -1,0 +1,59 @@
+
+<%= link_to image_tag("about-title.png", alt: "about page") %>
+
+<br>
+<br>
+
+
+<p>
+  Thank you for taking the time to help me with my research!  For those that are interested, here is a brief explanation of what I'm hoping to achieve:
+</p>
+<br>
+<p>
+  I am investigating techniques to improve <b class="sentimentgreen">sentiment analysis</b> on twitter data.  
+  Essentially, this involves collecting a large number of tweets from twitter and building 
+  a system that can be "trained" on some of these tweets to be able to decide whether or not 
+  a tweet is positive or negative.  This is the sort of thing that can be useful to companies
+  who want to know how the public is reacting to their product releases.
+</p>
+<br>
+<p>
+  For example, if people tweet: 
+</p>
+<br>
+<p class="tweetcolor">
+  "The new iphone is powerful, but I hate how heavy it is #applegravity #Newtonwouldlikeit"
+</p>
+<br>
+<p>
+  then by performing sentiment analysis, Apple can ascertain that there is a positive response to the iphone processor power, but a negative response to its weight.  This information ( particularly when extracted from 
+  hundreds of thousands of tweets) forms a valuable source of customer feedback.  It can be performed on a far larger scale than a survery and often offers a truer reflection of the users opinion.
+</p>
+<br>
+<p>
+    However, sarcasm makes this task very difficult.  It is comparatively simple to build a system that classifies the tweet from words that are associated with clearly positive or negative feelings (e.g 
+    <em class="sentimentgreen">powerful</em> and <em class="sentimentred"> heavy</em> in the tweet above).  However, consider the following tweet:
+</p>
+<br>
+<p class="tweetcolor">
+  "I just love the new Samsung. It's incredible. So, so fast. #sarcasm"
+</p>
+<br>
+<p> 
+    A system that isn't trained to deal with sarcasm will see <em class="sentimentgreen">love</em>, <em class="sentimentgreen">incredible</em> and <em class="sentimentgreen">fast</em>, and classify the tweet as positive, which isn't what we want at all!
+</p>
+<br>
+<p>
+    I have designed a system that aims to classify sarcastic tweets to deal with this problem.  However, in order to test the effectiveness of the system, I need to compare it against humans.  This is where you, the generous volunteer, comes into the picture.
+</p>
+<br>
+<p>
+    The annotator is a tool that simply presents you with a tweet, together with any replies that may have been made to that tweet.  You just need to judge whether or not you think it is sarcastic.  Simple.  The test set is large, so you don't need to go through every tweet.  However, if are able to classify 200 tweets, this would be immensely appreciated.
+</p>
+<p>
+    Thank you for your help!
+</p>
+<p>
+    Sam
+</p>
+

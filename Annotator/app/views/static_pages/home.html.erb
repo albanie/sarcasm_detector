@@ -1,0 +1,34 @@
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section> 
+      </section>
+    </aside>
+    <div class="span8">
+      <h4><%= link_to image_tag("twitterBird.png", alt: "") %>Tweet to be annotated:</h4>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>  
+<% else %>
+  <div class="center hero-unit">
+    <h1>Twitter annotation study</h1>
+
+    <h2>
+      A study into the challenges of detecting sarcasm on twitter.
+    </h2>
+
+    <p>
+      Would you like to participate in the study and help out? <br>Follow the link to find out more about what the study entails and how you can take part. 
+    </p>
+
+    <%= link_to "Find out more", instructions_path, class: "btn btn-large btn-primary" %>
+  </div>
+
+  <b>PLEASE NOTE:</b>  For technical reasons, this study can only be conducted in FIREFOX, SAFARI or IE9+.  It won't work correctly in GOOGLE CHROME.  Please only particpate if you have access to one of these three browsers. (If you're interested in why, <%= link_to 'click here', why_not_chrome_path %>)
+
+<%= link_to image_tag("me_speech.png", alt: "me") %>
+</div>
+<% end %>

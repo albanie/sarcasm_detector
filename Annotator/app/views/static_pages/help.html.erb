@@ -1,0 +1,173 @@
+<br>
+<%= link_to image_tag("instructions-title.png", alt: "Instructions") %>
+<br>
+<br>
+<h3>Background information</h3>
+<br>
+<br>
+<br>
+<br>
+<p>
+  This study is being conducted as part of research into techniques to improve <b class="sentimentgreen">sentiment analysis</b> on twitter data. 
+  Essentially, this involves collecting a large number of tweets from twitter and building 
+  a system that can be "trained" on some of these tweets to be able to decide whether or not 
+  a tweet is positive or negative.  This is the sort of thing that can be useful to companies
+  who want to know how the public is reacting to their product releases.
+</p>
+<br>
+<p>
+  For example, if people tweet: 
+</p>
+<br>
+<p class="tweetcolor">
+  "The new iphone is powerful, but I hate how heavy it is #applegravity #Newtonwouldlikeit"
+</p>
+<br>
+<p>
+  then by performing sentiment analysis, Apple can ascertain that there is a positive response to the iphone processor power, but a negative response to its weight.  This information (particularly when extracted from 
+  hundreds of thousands of tweets) forms a valuable source of customer feedback.  It can be performed on a far larger scale than a survery and often offers a truer reflection of the users opinion.
+</p>
+<br>
+<p>
+    However, sarcasm makes this task very difficult.  It is comparatively simple to build a system that classifies the tweet from words that are associated with clearly positive or negative feelings (e.g 
+    <em class="sentimentgreen">powerful</em> and <em class="sentimentred"> heavy</em> in the tweet above).  However, consider the following tweet:
+</p>
+<br>
+<p class="tweetcolor">
+  "I just love the new Samsung. It's incredible. So, so fast. #sarcasm"
+</p>
+<br>
+<p> 
+    A system that isn't trained to deal with sarcasm will see <em class="sentimentgreen">love</em>, <em class="sentimentgreen">incredible</em> and <em class="sentimentgreen">fast</em>, and classify the tweet as positive, which doesn't reflect the sentiment of the user at all!  In their raw form, tweets are a mass of unsorted snippets of information, mixed together without any structure.  The task of a classifer (the term given to such a system) is to separate this data into categories as accurately as possible.  To illustrate this concept, take a look at the diagram below and click 'Classify!' to see how the classifier aims to categorize the tweets:
+</p>
+
+  <div id="container" class="container">
+    <div id="main" role="main">
+      <div id="view_selection" class="btn-group">
+        <a href="#" id="all" class="btn btn-primary active">Raw tweets</a>
+        <a href="#" id="category" class="btn btn-success">Classify!</a>
+      </div>
+      <div id="vis"></div>
+    </div>
+  </div> <!--! end of #container -->
+
+<br>
+<p>
+    As part of my research, I have designed a system that aims to achieve this separation by classifying tweets as positive, sarcastic or negative to deal with this problem of intended sentiment.  However, in order to test the effectiveness of the system, I need to compare it against humans.  The purpose of this study is establish a human benchmark for the difficulty of the task of deciding whether or not a tweet is sarcastic.
+</p>
+<br>
+<h4>
+  Course of study
+</h4>
+<br>
+<p>
+  This research is being conducted as part of the dissertation for an MSc. in Networks and Distributed Systems at Trinity College, Dublin.
+</p>
+<br>
+<h4>
+Declaration of conflicts of interest
+</h4>
+<br>
+<p> 
+Please note that your participation in this study is designed to allow me to make progress in my dissertation research.  Your contribution will be used under the criterion that you are a fluent English speaker. There are no external or corporate conflicts of interest relevant to this research.  
+</p>
+<br>
+<h4>
+This study is entirely voluntary
+</h4>
+<br>
+<p>
+As the participant, you may abandon the study at any point should you wish to do so.  You may omit responses to any questions that you do not wish to answer.  If for any reason at all you do not wish for your results to be used, please send me an email at albanies@tcd.ie and I will ensure that your answers will not be stored. 
+<p/>
+<br>
+<h4>
+Risks/benefits to the participant
+</h4>
+<br>
+<p>
+There is no financial compensation for particpation in this study.  Your results will be used entirely anonymously in any presentation or publication of results.  There are no direct health risks associated with participation in this study.  Once the research has been completed, you will have the option to obtain the results of your own performance by email request.  However, the results cannot be released while the study is still ongoing.
+</p>
+<br>
+<h4>
+Illicit activity
+</h4>
+<br>
+<p>
+Please note that in the extremely unlikely event that illicit activity is conducted I will be obliged to report it to appropriate authorities.
+</p>
+<br>
+<h4>
+Quotations and recordings
+</h4>
+<br>
+<p>
+No quotations, audio recordings or video recordings will be used from participants in the study.
+</p>
+<br>
+<h3>Instructions</h3>
+<br>
+<p>
+You will be presented with a series of tweets, one at a time, together with other replies or tweets that were part of that conversation (if there were any).  The task is simply to note whether you believe the intended meaning of the original tweet was positive sarcastic or negative.  The tweets themselves have been made anonymous as far as possible - the username of the tweeter has been removed and any tweets directed at a specific user have had the name of that user replaced with @SomeUser. 
+</p>
+<br>
+<p>
+ Some of the tweets my be badly formed or ambiguous.  In such cases, just give your best guess as to the intention of the original tweet author.  If they are completely unintelligble, there is an option to mark the tweet as 'gibberish'.  Please also note that some tweets may contain offensive language. 
+</p>
+<br>
+<p>
+ As a participator, no personal information of yours will be stored after the study or used in any form of publication. The information that you contribute as a participant will be used entirely anonymously.
+</p>
+<br>
+<p>
+There is no time limit in which to classify tweets.  There is no minimum or maximum number that you are required to classify.  However, as a guide, if you feel you are able to comfortably classify 200 tweets, this would be very useful for the purposes of the research.  In order to make the study more interesting, the more tweets that you classify, the more you will increase your 'level' as a participant, allowing you to unlock themed images.  This is purely to make the task more enjoyable.  The data relating to the levels of particpants will not recorded.
+</p>
+<br>
+<p>
+If you feel tired or uncomfortable, please take a break.  You may logout at any time and log back in at any time.  If you wish to abandon the study, you are completely free to do so at any time.  The results are recorded as tweets are classified, so to complete the task, simply log out of the application.
+</p>
+<br>
+
+<%= link_to "Participate", signup_path, :class => "btn-large btn-success" %>
+  
+  <!-- end CSS-->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <script src="js/CustomTooltip.js"></script>
+  <script src="js/libs/coffee-script.js"></script>
+  <script src="js/libs/d3.min.js"></script>
+  <script src="js/libs/d3.csv.min.js"></script>
+  <script src="js/libs/d3.layout.min.js"></script>
+  <script src="js/libs/d3.geom.min.js"></script>
+  <script src="js/viz.js"></script>
+  <script type="text/javascript">
+
+   d3.csv("data/tweet_data2.csv", function(data) {
+        custom_bubble_chart.init(data);
+        custom_bubble_chart.toggle_view('all');
+    });
+
+    $(document).ready(function() {
+        $(document).ready(function() {
+          $('#view_selection a').click(function() {
+            var view_type = $(this).attr('id');
+            $('#view_selection a').removeClass('active');
+            $(this).toggleClass('active');
+            custom_bubble_chart.toggle_view(view_type);
+            return false;
+          });
+        });
+    });
+  </script>
+
+
+  <script>
+    window._gaq = [['_setAccount','UA-17355070-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>

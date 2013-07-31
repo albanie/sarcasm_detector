@@ -1,0 +1,7 @@
+<%= form_for(@annotation) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_area :annotation_value, placeholder: "Annotate the tweet..." %>
+  </div>
+  <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<% end %>

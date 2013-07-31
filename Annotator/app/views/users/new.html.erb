@@ -1,0 +1,114 @@
+<% provide(:title, 'Sign up') %>
+<%= link_to image_tag("consent.png", alt: "participant consent") %>
+<p>Please read the following before signing up to participate in the study.  If you have any questions, please don't hesitate to contact me at albanies@tcd.ie</p>
+<br>
+<h3>
+  Consent Form
+</h3>
+<br>
+<h4>
+Lead researcher
+</h4> 
+<br>
+<p>
+Samuel Albanie
+</p>
+<br>
+<h4>
+  Background to research
+</h4>
+<br>
+<p>
+  Please click <%= link_to "here", instructions_path %> if you wish to re-read the background to the study.
+ </p>
+ <br>
+ <h4>
+Procedure
+</h4>
+<br>
+<p>
+As a participant in the study, you will be provided with a randomly shuffled list of tweets, one tweet at a time. The task is simply to choose whether you believe the intended meaning of the tweet was positive, sarcastic or negative. All tweets themselves will be anonymous (user names will be removed).  Your contribution as a participant will be used anonymously.  You may abandon the study at any point should they wish to do so.  If for any reason you wish for your input to be deleted, please do not hesitate to email me at the email below and the data will be destroyed.
+</p>
+<br>
+<h4>
+Publication
+</h4>
+<br>
+<p>
+The research is being conducted as part of a masters dissertation, with the possibility of publication at the <%= link_to "WSDM 2014 conference", "http://www.wsdm-conference.org/2014/" %>.  
+</p>
+<br>
+<h4>
+DECLARATION: 
+</h4>
+<br>
+<p>
+  <ul>
+  <li> I am 18 years or older and am competent to provide consent.</li>
+  <br>
+  <li>I understand that the tweets have not been filtered for content, and may therefore contain material of an adult nature.</li>
+  <br>
+<li> I have read, or had read to me, the page entitled 'information and instructions' providing information about this research and this consent form. I have had the opportunity to ask questions and all my questions have been answered to my satisfaction and understand the description of the research that is being provided to me. </li>
+<br>
+<li> I agree that my data is used for scientific purposes and I have no objection that my data is published in scientific publications in a way that does not reveal my identity. </li>
+<br>
+<li> I understand that if I make illicit activities known, these will be reported to appropriate authorities.</li>
+<br>
+<li> I freely and voluntarily agree to be part of this research study, though without prejudice to my legal and ethical rights. </li>
+<br>
+<li> I understand that I may refuse to answer any question and that I may withdraw at any time without penalty.</li>
+<br>
+<li>  I understand that my participation is fully anonymous and that no personal details about me will be recorded. </li>
+<br>
+<li> I understand that if I or anyone in my family has a history of epilepsy then I am proceeding at my own risk.</li>
+<br>
+<li> I have the option to receive a copy of this agreement.</li>
+<br>
+<h4>
+Statement of investigator’s responsibility
+</h4>
+<br>
+<p> I have explained the nature and purpose of this research study, the procedures to be undertaken and any risks that may be involved. I have offered to answer any questions and fully answered such questions. I believe that the participant understands my explanation and has freely given informed consent. 
+</p>
+<em> Samuel Albanie</em>
+<br>
+<br>
+<h4>
+Researcher contact details
+</h4>
+<br>
+<p>
+<em class="sentimentgreen">name:</em>Samuel Albanie
+</p>
+<p>
+<em class="sentimentgreen">email:</em> albanies@tcd.ie
+</p>
+<br>
+<h4>
+Participant consent
+</h4>
+<br>
+<p> By filling in the form below and clicking the 'I consent to participate' button, you are giving your consent to take part in the study, subject to the terms laid out above.
+</p>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+      
+      <%= f.label :password, "password (minimum of six characters)" %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "password confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "I consent to participate", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+

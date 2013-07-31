@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content: MyString
+  tweetId: MyString
+  replies: 1
+
+two:
+  content: MyString
+  tweetId: MyString
+  replies: 1

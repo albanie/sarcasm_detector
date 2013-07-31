@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tweet:</b>
+  <%= @tweet.content %>
+</p>
+
+<!--
+<p>
+  <b>Annotator:</b>
+  <%= @tweet.annotator %>
+</p>
+-->
+
+<p>
+  <b>Datetime:</b>
+  <%= @tweet.dateTime %>
+</p>
+
+<p>
+  Need something sensible here in views/tweets/show.html.erb
+</p>
+
+<!-- 
+<h2>Annotations</h2>
+<% @tweet.tweets.each do |thetweet| %>
+    <p>
+        <b>Annotator:</b>
+        <%= thetweet.annotator %>
+    </p>
+
+    <p>
+        <b>Content:</b>
+        <%= thetweet.content %>
+    </p>
+  -->
+<% end %>
+
+
+
+<h2>Please annotate this. Pretty please:</h2>
+<%= form_for([@tweet, @tweet.annotations.build]) do |f| %>
+    <div class="field">
+        <%= f.label :annotator %><br />
+        <%= f.text_field :annotator %>
+    </div>
+    <div class="field">
+        <%= f.label :annotationValue %><br />
+        <%= f.text_area :annotationValue %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+    <% end %>
+
+
+<%= link_to 'Edit', edit_tweet_path(@tweet) %> |
+<%= link_to 'Back to tweets', tweets_path %>

@@ -1,0 +1,22 @@
+<a href="<%= user_path(current_user) %>">
+<%= link_to image_tag(@rating[1]) %>
+  </a>
+
+<h1>
+  <%= current_user.name %>
+</h1>
+<span>
+  <%= link_to "view my profile", current_user %>
+</span>
+<p>Tweets Annotated:
+<%= @count %>
+</p>
+<p>Your rating: <%= @rating[0] %></p>
+<br>
+<br>
+
+
+
+
+<span>
+</span>

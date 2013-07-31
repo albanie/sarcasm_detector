@@ -1,0 +1,30 @@
+<li id="<%= @feed_item.content %>">
+  <span class="user">
+  </span>
+  <span class="content"><%= @feed_item.content %></span>
+  <span class="content"><% @annotation.tweetId = @feed_item.tweetId %></span>
+  <hr>
+  <span class="timestamp">
+    <b>Replies:</b> 
+
+    <br>
+    <%= @feed_item.reply_1 %> 
+    <br>
+    <br>	
+    <%= @feed_item.reply_2 %> 
+    <br>
+    <br>	
+    <%= @feed_item.reply_3 %> 
+    <br>
+    <br>	
+    <%= @feed_item.reply_4 %>
+    <br> 
+    <br>	
+    <%= @feed_item.reply_5 %>
+    <br> 
+    <br>	
+    <hr>
+    <h4>Classification</h4> (Intended sentiment of the original tweet author): 
+    <%= render partial: 'shared/answer_buttons' %> 
+  </span>
+</li>
