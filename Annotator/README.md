@@ -7,7 +7,7 @@ Annotator
 Install
 ----------
 
-This rails application is designed to evaluate humans ability to recognize sarcasm in tweets.  It is designed to work with ruby-1.9.3-p392 and rails 3.
+This rails application is designed to evaluate humans ability to recognise sarcasm in tweets.  It is designed to work with ruby-1.9.3-p392 and rails 3.
 
 To run this locally check which version of ruby you have with the following command:
 
@@ -26,6 +26,7 @@ By default, the app should now be running on localhost:3000.
 ---------
 
 Information
+------------
 
 Here is the information given to the user, which gives an overview of the purpose of the tool, together with instructions as to how it should be used. minus some of the necessary legalize required for a research study:
 

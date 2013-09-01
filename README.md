@@ -1,7 +1,7 @@
-Twitter Irony Detection
+Twitter Sarcasm Detection
 -----------------------
 
-This repository contains the code for the projects used to undertake a study into irony detection on twitter.  It consists of three components:
+This repository contains the code for the projects used to undertake a study into sarcasm detection on twitter.  It consists of three components:
 
 <dl>
 <dt>Gatherer</dt>
@@ -9,5 +9,5 @@ This repository contains the code for the projects used to undertake a study int
 <dt>Annotator</dt>
 <dd>A rails application that assesses the ability of humans to detect sarcasm in tweets.</dd>
 <dt>Learner</dt>
-<dd>The base scripts for training classifiers and detecting irony in tweets.</dd>
+<dd>The base scripts for training classifiers and detecting sarcasm in tweets.</dd>
 </dl>
