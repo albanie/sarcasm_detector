@@ -20,7 +20,7 @@ Adjusting the ratio of training data/test data is achieved through altering the 
 EchoEncoder
 ---------------
 
-The EchoEncoder requires a sophisticated training process.  To run the EchoEncoder, run the three scripts in order.
+The EchoEncoder requires a slightly more involved training process.  To run the EchoEncoder, run the three scripts in order.
 
 EchoEncoder operates by splitting the data into three parts:
 
