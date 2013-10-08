@@ -12,16 +12,17 @@ conn = PGconn.connect('dbname=backup')
 res  = conn.exec('select * from users')
 
 res.each do |row|
+   # Debugging output
    puts row["id"]
    puts row["email"]
    puts row["name"]
 
 
 
-   #SV.open("app_users.csv", "wb") do |csv|
-   #                   csv <<  [ "|negative|","|#{(content_array[0])}|",
-   #                                       "|#{reply_1}|","|#{reply_2}|","|#{reply_3}|","|#{reply_4}|","|#{reply_5}|" ]
-   #                 end
+   CSV.open("app_users.csv", "wb") do |csv|
+                      csv <<  [ "|negative|","|#{(content_array[0])}|",
+                                          "|#{reply_1}|","|#{reply_2}|","|#{reply_3}|","|#{reply_4}|","|#{reply_5}|" ]
+                    end
   
 end
 
